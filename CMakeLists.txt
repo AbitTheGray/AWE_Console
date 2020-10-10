@@ -24,9 +24,10 @@ target_include_directories(AWE_Console PUBLIC src/)
 target_link_libraries(AWE_Console -static-libgcc -static-libstdc++ stdc++fs)
 
 #--------------------------------
-# Source
+# Tests
 #--------------------------------
 
 if(BUILD_TESTING)
+    enable_testing()
     add_subdirectory(tests)
 endif()
